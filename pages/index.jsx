@@ -73,11 +73,11 @@ export default function Home() {
       </header>
       {/* Tab Pertama */}
       <div className="bg-gray-800 h-full flex justify-center items-center" id="kembali">
-        <div className="bg-gray-700 w-1/2 h-1/2 rounded p-6 flex flex-col">
+        <div className="bg-gray-700 w-4/5 h-4/5 rounded p-6 flex flex-col">
           <div className="border-t border-r border-l rounded-t flex justify-center items-center">
             <h2 className=" text-center text-lg font-semibold font-serif text-gray-200">Tab Pertama</h2>
           </div>
-          <div className="bg-gray-600 w-full h-full rounded-b px-6 flex-col flex border justify-center space-y-2">
+          <div className="bg-gray-600 w-full h-full rounded-b px-6 flex-col flex border justify-center items-center space-y-2">
             <label classname="block text-md font-normal leading-8 text-gray-100">Masukkan jumlah deretan bilangan</label>
 
             <div className="relative rounded-md shadow-lg shadow-gray-800 w-full">
