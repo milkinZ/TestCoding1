@@ -73,60 +73,57 @@ export default function Home() {
       </header>
       {/* Tab Pertama */}
       <div className="bg-gray-800 h-full flex justify-center items-center" id="kembali">
-        <div className="bg-gray-700 w-4/5 h-4/5 rounded p-6 flex flex-col">
+        <div className="bg-gray-700 w-5/6 h-5/6 rounded p-6 flex flex-col">
           <div className="border-t border-r border-l rounded-t flex justify-center items-center">
             <h2 className=" text-center text-lg font-semibold font-serif text-gray-200">Tab Pertama</h2>
           </div>
           <div className="bg-gray-600 w-full h-full rounded-b px-6 flex-col flex border justify-center items-center space-y-2">
             <label classname="block text-md font-normal leading-8 text-gray-100">Masukkan jumlah deretan bilangan</label>
-
             <div className="relative rounded-md shadow-lg shadow-gray-800 w-full">
               <input
                 disabled={isDisabled}
                 onChange={handleChange}
-                type=""
-                className="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-100 ring-1 ring-inset bg-gray-700 ring-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6"
+                type="number"
+                className="block w-full rounded-md border-0 py-1.5 px-2 text-center text-gray-100 ring-1 ring-inset bg-gray-700 ring-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6"
                 placeholder="Masukkan angka 1 - 10000"
               />
-              <div className="absolute inset-y-0 right-0 flex items-center">
-                <button
-                  disabled={isDisabled}
-                  onClick={simpan}
-                  className="h-full flex justify-center items-center rounded-r-md ring-1 ring-inset ring-gray-900 pl-4 pr-4 text-gray-300 bg-gray-900 hover:text-white hover:bg-blue-800  sm:text-sm"
-                >
-                  Lanjut
-                </button>
-              </div>
+            </div>
+            <div>
+              <button
+                disabled={isDisabled}
+                onClick={simpan}
+                className="rounded-md ring-1 ring-inset ring-gray-900 px-6 py-2 text-center text-white bg-blue-800 hover:text-white hover:ring-gray-200 hover:bg-gray-800  sm:text-sm"
+              >
+                Lanjut
+              </button>
             </div>
           </div>
         </div>
       </div>
       {/* Tab Kedua */}
       <div className="bg-gray-800 h-full flex justify-center items-center" id="generate">
-        <div className="bg-gray-700 w-4/5 h-4/5 rounded pt-8 px-6 pb-10 flex flex-col">
+        <div className="bg-gray-700 w-5/6 h-5/6 rounded pt-8 px-6 pb-10 flex flex-col">
           <div className="border-t border-r border-l rounded-t flex justify-center items-center">
             <h2 className=" text-center text-lg font-semibold font-serif text-gray-200">Tab Kedua</h2>
           </div>
-          <div className="bg-gray-600 w-full h-full rounded-b px-6 border flex-col flex items-end py-2 space-y-2">
-            <div className="flex-col flex justify-start items-center w-full h-full space-y-2">
-              <label classname="block text-md font-normal text-gray-50">Klik tombol untuk mengacak bilangan</label>
-              <label className="block text-xs font-normal text-gray-300">Klik tombol hingga menemukan daftar bilangan yang diingkan</label>
-              <button
-                id="myButton"
-                onClick={coba}
-                className="rounded-md ring-1 ring-inset ring-gray-900 px-6 py-2 text-center text-white bg-blue-800 hover:text-white hover:ring-gray-200 hover:bg-gray-800  sm:text-sm"
-              >
-                Generate
-              </button>
-              <div className="border w-full max-h-64 rounded p-4 text-center text-gray-100 overflow-auto">
-                <p className="text-normal font-mono">{bil.join(', ')}</p>
-              </div>
+          <div className="bg-gray-600 w-full h-full rounded-b px-6 border flex-col flex items-center py-2 space-y-2">
+            <label classname="block text-md font-normal text-gray-50">Klik tombol untuk mengacak bilangan</label>
+            <label className="block text-xs font-normal text-gray-300">Klik tombol hingga menemukan daftar bilangan yang diingkan</label>
+            <button
+              id="myButton"
+              onClick={coba}
+              className="rounded-md ring-1 ring-inset ring-gray-900 px-6 py-2 text-center text-white bg-blue-800 hover:text-white hover:ring-gray-200 hover:bg-gray-800  sm:text-sm"
+            >
+              Generate
+            </button>
+            <div className="border w-full max-h-64 rounded p-4 text-center text-gray-100 overflow-auto">
+              <p className="text-normal font-mono">{bil.join(', ')}</p>
             </div>
-            <div>
+            <div className="flex w-full justify-end">
               <button
                 id="myButton2"
                 onClick={next}
-                className="rounded-md ring-1 ring-inset ring-gray-900 px-6 py-2 text-right text-white bg-blue-800 hover:text-white hover:ring-gray-200 hover:bg-gray-800  sm:text-sm"
+                className="rounded-md ring-1 ring-inset ring-gray-900 px-6 py-2 text-white bg-blue-800 hover:text-white hover:ring-gray-200 hover:bg-gray-800  sm:text-sm"
               >
                 Simpan
               </button>
@@ -136,7 +133,7 @@ export default function Home() {
       </div>
       {/* Tab Ketiga */}
       <div className="bg-gray-800 h-full flex justify-center items-center" id="hasil">
-        <div className="bg-gray-700 w-4/5 h-4/5 rounded pt-8 px-6 pb-10 flex flex-col">
+        <div className="bg-gray-700 w-5/6 h-5/6 rounded pt-8 px-6 pb-10 flex flex-col">
           <div className="border-t border-r border-l rounded-t flex justify-center items-center">
             <h2 className=" text-center text-lg font-semibold font-serif text-gray-200">Tab Ketiga</h2>
           </div>
